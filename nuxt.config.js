@@ -29,6 +29,10 @@ export default {
    ** Headers of the page
    */
   head: {
+   
+    htmlAttrs: {
+      dir: 'rtl'
+    },
     title: SITE_INFO.sitename || process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -37,6 +41,7 @@ export default {
         hid: 'description',
         name: 'description',
         content: SITE_INFO.sitedescription || process.env.npm_package_description || ''
+        
       }
     ],
     link: [
